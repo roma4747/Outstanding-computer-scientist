@@ -1,0 +1,46 @@
+.header {
+   padding: 24px 0;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 100;
+   width: 100%;
+   background-color: #0a0a0a;
+
+   &-wraper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &-button {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 44px;
+      height: 44px;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &-button-element {
+      display: block;
+      height: 2px;
+      width: 32px;
+      background-color: var(--text-color);
+      transition: transform linear 300ms;
+   }
+
+   .hidden &-button-element:first-child {
+      transform: rotate(-45deg) translate(-1px, 7px);
+   }
+   .hidden &-button-element:last-child {
+      transform: rotate(45deg) translate(-2px, -8px);
+   }
+
+   @media (min-width: $tablet-res) {
+      &-button {
+         display: none;
+      }
+   }
+}

@@ -1,0 +1,67 @@
+.experience {
+   &-section {
+      padding: 64px 0;
+   }
+
+   &-title {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 43px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      color: var(--title-color);
+      margin-bottom: 32px;
+   }
+
+   &-sub-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      color: var(--title-color);
+      margin-bottom: 4px;
+   }
+
+   &-time--first {
+      margin-bottom: 12px;
+   }
+   &-time--second {
+      margin-bottom: 4px;
+   }
+
+   &-time,
+   &-text,
+   &-company {
+      font-size: 16px;
+      line-height: 160%;
+   }
+
+   &-box:first-child {
+      margin-bottom: 40px;
+   }
+
+   &-company {
+      font-weight: 600;
+      color: var(--link-color);
+      margin-bottom: 12px;
+   }
+
+   @media (min-width: $desktop-res) {
+      &-section {
+         padding: 80px 0 72px;
+      }
+
+      &-wraper {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      &-wraper-boxes {
+         max-width: 600px;
+      }
+
+      &-title {
+         font-size: 76px;
+      }
+   }
+}

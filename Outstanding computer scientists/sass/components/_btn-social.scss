@@ -1,0 +1,40 @@
+.link-social {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 48px;
+   height: 48px;
+   background-color: #222;
+   border-radius: 50%;
+   transition: all ease-in 250ms;
+
+   &:hover,
+   &:focus {
+      background-color: var(--link-color);
+   }
+
+   &:hover .icon-github:before,
+   &:focus .icon-github:before,
+   &:hover .icon-linkedin:before,
+   &:focus .icon-linkedin:before {
+      color: #333;
+   }
+
+   @media (min-width: $desktop-res) {
+      & {
+         width: 54px;
+         height: 54px;
+      }
+   }
+}
+
+.icon-github,
+.icon-linkedin {
+   font-size: 24px;
+
+   @media (min-width: $desktop-res) {
+      & {
+         font-size: 26px;
+      }
+   }
+}

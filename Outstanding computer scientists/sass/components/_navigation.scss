@@ -1,0 +1,42 @@
+.nav {
+   display: none;
+
+   &-list {
+      display: flex;
+      gap: 32px;
+   }
+
+   &-link {
+      font-family: var(--third-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.03em;
+      padding-bottom: 2px;
+
+      // &:hover {
+      //    border-bottom: 2px solid var(--border-color);
+      // }
+
+      &::after {
+         content: "";
+         display: block;
+         width: 0%;
+         height: 2px;
+         background-color: var(--border-color);
+         margin-top: 2px;
+         transition: width ease-in 250ms;
+      }
+   }
+
+   &-item:hover &-link::after,
+   &-item:focus &-link::after {
+      width: 100%;
+   }
+
+   @media (min-width: $tablet-res) {
+      & {
+         display: block;
+      }
+   }
+}

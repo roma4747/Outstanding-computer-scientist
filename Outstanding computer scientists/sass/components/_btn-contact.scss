@@ -1,0 +1,56 @@
+.link-contact {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 12px;
+   height: 48px;
+   border-radius: 100px;
+   background: var(--link-color);
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 100%;
+   text-transform: uppercase;
+   color: #0a0a0a;
+   padding: 0 4px 0 16px;
+   transition: all linear 250ms;
+   white-space: nowrap;
+
+   &:hover,
+   &:focus {
+      background: #222;
+      color: var(--link-color);
+   }
+
+   &-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #0a0a0a;
+      transition: background-color linear 250ms;
+   }
+
+   @media (min-width: $desktop-res) {
+      & {
+         height: 54px;
+         font-size: 16px;
+         padding: 0 4px 0 24px;
+      }
+   }
+}
+
+.wraper-contacts {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 16px;
+   margin-bottom: 64px;
+
+   @media (min-width: $tablet-res) {
+      &-wraper-contacts {
+         margin-bottom: 0;
+      }
+   }
+}

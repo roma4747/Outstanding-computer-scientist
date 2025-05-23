@@ -1,0 +1,38 @@
+.link {
+   &:first-child {
+      margin-right: 24px;
+   }
+
+   & {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid var(--link-color);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: var(--link-color);
+      transition: color ease-in 250ms;
+   }
+
+   &:hover,
+   &:focus {
+      color: #aec457;
+   }
+
+   & img {
+      width: 22px;
+   }
+
+   @media (min-width: $desktop-res) {
+      & {
+         font-size: 16px;
+      }
+
+      & img {
+         width: 24px;
+      }
+   }
+}

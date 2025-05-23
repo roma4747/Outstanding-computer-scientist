@@ -1,0 +1,15 @@
+.container {
+   margin: 0 auto;
+   padding: 0 15px;
+
+   @media screen and (min-width: $tablet-res) {
+      & {
+         width: 738px;
+      }
+   }
+   @media screen and (min-width: $desktop-res) {
+      & {
+         width: 1250px;
+      }
+   }
+}
